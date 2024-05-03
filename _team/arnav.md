@@ -1,6 +1,6 @@
 ---
 name: K Arnav
-batch: Y21 AM
+batch: Y21 (AM)
 info: BS Physics
 insta: arnav_2103
 email: karnav21@iitk.ac.in

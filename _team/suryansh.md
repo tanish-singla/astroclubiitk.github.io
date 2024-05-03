@@ -1,6 +1,6 @@
 ---
 name: Suryansh Gaur
-batch: Y21 AM
+batch: Y21 (AM)
 info: BT Chemical Engg.
 facebook: Wolwerinohalloweeno
 insta: suryanshgaur962

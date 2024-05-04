@@ -10,7 +10,7 @@ subtitle: Feel free to contact any of us!
 <div class="container pt-6 pb-6">
   <div class="row pt-6 pb-6">
     {% for member in site.team %} {% if member.batch == "Y21" %}
-    <div class="col-12 col-md-6 mb-2">
+    <div style="text-align: center" class="col-12 col-md-6 mb-2">
       <div class="card border-0">
         {% if member.image_path %}
         <img
@@ -88,57 +88,82 @@ subtitle: Feel free to contact any of us!
 <h3 style="text-align: center">Associate Members (2023-24)</h3>
 <br />
 
-<table style="font-family: arial, sans-serif; border-collapse: collapse; width: 100%">
-  <tr>
-    <th style="text-align: center; color: white; background-color: black; border-color: white">Sr.No</th>
-    <th style="text-align: center; color: white; background-color: black; border-color: white">Name</th>
-    <th style="text-align: center; color: white; background-color: black; border-color: white">Department</th>
-    <th style="text-align: center; color: white; background-color: black; border-color: white">Batch</th>
-    <th style="text-align: center; color: white; background-color: black; border-color: white">Email</th>
-  </tr>
-  <tr>
-    <th style="text-align: center; color: white; background-color: black; border-color: white">1.</th>
-    <td style="text-align: center; color: white; background-color: black; border-color: white">Anushree Shukla</td>
-    <td style="text-align: center; color: white; background-color: black; border-color: white">Aerospace Engineering</td>
-    <td style="text-align: center; color: white; background-color: black; border-color: white;">Y21</td>
-    <td td style="text-align: center; color: white; background-color: black; border-color: white"><a href="mailto:anushrees21@iitk.ac.in">anushrees21@iitk.ac.in</a></td>
-  </tr>
-  <tr>
-    <th style="text-align: center; color: white; background-color: black; border-color: white">2.</th>
-    <td style="text-align: center; color: white; background-color: black; border-color: white">K Arnav</td>
-    <td style="text-align: center; color: white; background-color: black; border-color: white">Physics</td>
-    <td style="text-align: center; color: white; background-color: black; border-color: white">Y21</td>
-    <td style="text-align: center; color: white; background-color: black; border-color: white"><a href="mailto:karnav21@iitk.ac.in">karnav21@iitk.ac.in</a></td>
-  </tr>
-  <tr>
-    <th style="text-align: center; color: white; background-color: black; border-color: white">3.</th>
-    <td style="text-align: center; color: white; background-color: black; border-color: white">Eesh Nagauriya</td>
-    <td style="text-align: center; color: white; background-color: black; border-color: white">Mechanical Engineering</td>
-    <td style="text-align: center; color: white; background-color: black; border-color: white">Y21</td>
-    <td style="text-align: center; color: white; background-color: black; border-color: white"><a href="mailto:eeshn21@iitk.ac.in">eeshn21@iitk.ac.in</a></td>
-  </tr>
-  <tr>
-    <th style="text-align: center; color: white; background-color: black; border-color: white">4.</th>
-    <td style="text-align: center; color: white; background-color: black; border-color: white">Shreya Rajak</td>
-    <td style="text-align: center; color: white; background-color: black; border-color: white">Aerospace Engineering</td>
-    <td style="text-align: center; color: white; background-color: black; border-color: white">Y21</td>
-    <td style="text-align: center; color: white; background-color: black; border-color: white"><a href="mailto:shreyar21@iitk.ac.in">shreyar21@iitk.ac.in</a></td>
-  </tr>
-  <tr>
-    <th style="text-align: center; color: white; background-color: black; border-color: white">5.</th>
-    <td style="text-align: center; color: white; background-color: black; border-color: white">Suryansh Gaur</td>
-    <td style="text-align: center; color: white; background-color: black; border-color: white">Chemical Engineering</td>
-    <td style="text-align: center; color: white; background-color: black; border-color: white">Y21</td>
-    <td style="text-align: center; color: white; background-color: black; border-color: white"><a href="mailto:suryanshg21@iitk.ac.in">suryanshg21@iitk.ac.in</a></td>
-  </tr>
-  <tr>
-    <th style="text-align: center; color: white; background-color: black; border-color: white">6.</th>
-    <td style="text-align: center; color: white; background-color: black; border-color: white">Vaishnavi Singh</td>
-    <td style="text-align: center; color: white; background-color: black; border-color: white">Mechanical Engineering</td>
-    <td style="text-align: center; color: white; background-color: black; border-color: white">Y21</td>
-    <td style="text-align: center; color: white; background-color: black; border-color: white"><a href="mailto:vaishnavis21@iitk.ac.in">vaishnavis21@iitk.ac.in</a></td>
-  </tr>
-</table>
+<div class="container pt-6 pb-6">
+  <div class="row pt-6 pb-6">
+    {% for member in site.team %} {% if member.batch == "Y21 (AM)" %}
+    <div class="col-12 col-md-6 mb-2">
+      <div class="card border-0">
+        {% if member.image_path %}
+        <img
+          loading="lazy"
+          alt="{{ member.name }}"
+          class="img-fluid mb-2 card-img-top"
+          src="{{ site.baseurl }}{{ member.image_path }}"
+        />
+        {% endif %}
+        <div class="card-body text-center" style="padding: 0px">
+          <h4
+            class="card-title mb-0"
+            style="padding-bottom: 10px; margin: 10px"
+          >
+            {{ member.name }}
+          </h4>
+          <h6 class="card-text">{{ member.batch }} {{ member.info }}</h6>
+          <ul class="list-inline text-center" style="margin: 0">
+            <li class="list-inline-item">
+              <a
+                target="_blank"
+                href="https://facebook.com/{{ member.facebook }}"
+                title="Facebook"
+              >
+                <span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fab fa-facebook fa-stack-1x"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                target="_blank"
+                href="https://instagram.com/{{ member.insta }}"
+                title="Instagram"
+              >
+                <span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fab fa-instagram fa-stack-1x"></i>
+                </span>
+              </a>
+            </li>
+          </li>
+          <li class="list-inline-item">
+            <a
+              target="_blank"
+              href="mailto:{{ member.email }}"
+              title="Instagram"
+            >
+              <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fas fa-envelope fa-stack-1x"></i>
+              </span>
+            </a>
+          </li>
+        </li>
+        <li class="list-inline-item">
+          <a
+            target="_blank"
+            href="https://github.com/{{ member.github }}"
+            title="Github"
+          >
+            <span class="fa-stack fa-lg" aria-hidden="true">
+              <i class="fab fa-github fa-stack-1x"></i>
+            </span>
+          </a>
+        </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+</div>
+
 
 <h3 style="text-align: center">Secretaries (2023-24)</h3>
 <br />

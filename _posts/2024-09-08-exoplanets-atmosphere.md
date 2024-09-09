@@ -11,7 +11,7 @@ tags: [exoplanets, spectroscopy]
 ## Abstract
 Exoplanet research is currently going through a renaissance. The planets existing outside of our Solar system are the exoplanets. In scientific news, you often hear that ”water” has been found in so and so ”X” planet. There are signs of methane in an Earth-like planet showing signs of life. How do scientists detect the elements in the atmosphere of an exoplanet? How do they retrieve the different parameters of the atmosphere? This article will briefly overview the retrieval processes, understanding of spectroscopy, and how the temperature and chemical composition of the atmosphere change the transmission spectrum.
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+<!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script> -->
 
 ## Introduction
 Atmospheric retrieval is the inference of the atmospheric properties of an exoplanet given an observed spectrum. We can go beyond detecting gases in exoplanet atmospheres to measure how much of each chemical resides in the atmosphere. Extracting this detailed information from an observed spectrum is called atmospheric retrieval. The atmospheric properties include the chemical composition, temperature structure atmospheric circulation, and clouds/hazes, all of which leave their imprints on the spectrum. The retrieved properties can, in turn, provide insights into the various atmospheric physical and chemical processes as well as into their formation history. So, without any further delay let us dive into the world of exoplanets and explore what spectroscopy is and why it is necessary in retrieving the planets’ properties.
